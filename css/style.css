@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo|Lato|Montserrat:100");
+@import url("https://fonts.googleapis.com/css?family=La+Belle+Aurore");
+:root {
+  --mainColor: #599699;
+}
+/**{
+  margin: 0;
+}*/
+
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: "Heebo", sans-serif;
+}
+.header {
+  font-weight: 100;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+a {
+  background: linear-gradient(
+    to bottom,
+    var(--mainColor) 0%,
+    var(--mainColor) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  color: white;
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  border: 0;
+  color: #4d4d4d;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+.navspace {
+  margin: 6px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-family: "La Belle Aurore", cursive;
+  color: white;
+  font-size: 70px;
+  font-weight: 100;
+  display: block;
+  text-align: center;
+}
+h2 {
+  font-family: "La Belle Aurore", cursive;
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  display: block;
+  text-align: center;
+  margin-top: 70px;
+}
+p {
+  min-height: 15vh;
+  max-width: 50vw;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin-top: -25px;
+  margin-bottom: 30px;
+}
+.intro {
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #9896a4;
+  border-radius: 2px;
+}
+#logo {
+  display: block;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#workflow {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 30px;
+  color: white;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+#process {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+/*projects*/
+
+#projects {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+}
+.project-pic {
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: auto;
+  height: 350px;
+}
+.projectspace {
+  padding: 10px;
+}
+.project-tile {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 80px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #9896a4;
+  background-color: #9896a4;
+  width: 100%;
+  /*margin: 300px 0 0 0;*/
+  border-radius: 2px;
+}
+.contact-details {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 0 0 40px 0;
+  padding: 10px;
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .project-pic {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
